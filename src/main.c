@@ -12,7 +12,6 @@ Cursor curs={0, 0};
 char *textFile;
 
 int isEdit=0;
-int test=0;
 int scrollNum; 	
 
 int main( int argc, char *argv[] ){
@@ -41,9 +40,6 @@ int main( int argc, char *argv[] ){
 		print_text(textFile, scrollNum);
 		print_cursor(curs);
 		process_key();
-		if (test<=0) {
-			test=0;
-		}
 	}
 	cook();
 }
